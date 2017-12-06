@@ -39,10 +39,10 @@
                         </div>
                     </li>
                     <li>
-                        <a href="/contact">contact</a>
+                        <a href="/list">log in</a>
                     </li>
                     <li>
-                        <a href="/list">log in</a>
+                        <a href="/about">about</a>
                     </li>
                 </ul>
             </div>

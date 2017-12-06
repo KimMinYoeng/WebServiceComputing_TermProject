@@ -117,15 +117,14 @@ Slider Section Start
                     <br><br><br><br>
 
                     <h2>
-                        <div style="width:300px;margin:0 auto;>
-                                <b class="is-visible">BOOK LIST</b>
+                        <div style="width:180px;margin:0 auto;>
+                                <b class="is-visible">
+                        <a href="/bookList.do" > BOOK LIST</a></b>
                 </div>
                 </h2>
                 <p>
                     OPEN API를 이용하여 사용자가 원하는 도서를 찾아주고 도서에 대한 정보와 가격을 사용자에게 알려주는 역할을 한다.
                 </p>
-                <center>
-                    <a href="/bookList.do" >바로 찾기</a></center>
             </div>
 
         </div>
@@ -146,18 +145,14 @@ Slider Section Start
                     <br><br><br><br>
 
                     <h2>
-                        <div style="width:300px;margin:0 auto;>
-                                <b class="is-visible">LIBRARY LIST</b>
-                </div>
+                        <div style="width:180px;margin:0 auto;>
+                                <b class="is-visible">
+                        <a href="/service/library/list.do" >LIBRARY LIST</a></b>
+
                 </h2>
                 <p>
-                    도서관의 위치를 알려드려요~~!!
+                    OPEN API를 이용하여 사용자가 원하는 지겨의 도서관을 도서관의 주소와 정보들을 알려드립니다.
                 </p>
-                <p>
-                    we search a book using OPEN API, and show them to user. that was improve impormation and price etc.
-                </p>
-                <center>
-                    <a href="/service/library/list.do"   >바로 찾기</a></center>
             </div>
 
         </div>
@@ -178,18 +173,14 @@ Slider Section Start
                     <br><br><br><br>
 
                     <h2>
-                        <div style="width:300px;margin:0 auto;>
-                                <b class="is-visible">LIBRARY EVENT</b>
+                        <div style="width:180px;margin:0 auto;>
+                                <b class="is-visible">
+                        <a href="/service/library/event.do" >LIBRARY EVENT</a></b>
                 </div>
                 </h2>
                 <p>
-                    지금 진행하는 도서관 행사를 알아보아요~~
+                    OPEN API를 이용하여 사용자가 지역과 도서관을 입력하면 해당 도서관의 행사를 알려드립니다.
                 </p>
-                <p>
-                    we search a book using OPEN API, and show them to user. that was improve impormation and price etc.
-                </p>
-                <center>
-                    <a href="/service/library/event.do"   >바로 찾기</a></center>
             </div>
 
         </div>
@@ -210,18 +201,14 @@ Slider Section Start
                     <br><br><br><br>
 
                     <h2>
-                        <div style="width:300px;margin:0 auto;>
-                                <b class="is-visible">LIBRARY EDUCATION </b>
+                        <div style="width:230px;margin:0 auto;>
+                                <b class="is-visible">
+                        <a href="/service/library/education.do" >LIBRARY EDUCATION </a></b>
                 </div>
                 </h2>
                 <p>
-                    진행중인 도서관 강좌를 찾아보아용~
+                    OPEN API를 이용하여 사용자가 지역과 도서관을 입력하면 해당 도서관의 강좌를 알려드립니다.
                 </p>
-                <p>
-                    we search a book using OPEN API, and show them to user. that was improve impormation and price etc.
-                </p>
-                <center>
-                    <a href="/service/library/education.do"  >바로 찾기</a></center>
             </div>
 
         </div>
@@ -247,12 +234,12 @@ Footer Section Start
             <!-- Social Media -->
             <ul class="social">
                 <li>
-                    <a href="http://wwww.fb.com/themefisher" class="Facebook">
+                    <a href="https://www.facebook.com/profile.php?id=100003644582958&ref=bookmarks" class="Facebook">
                         <i class="ion-social-facebook"></i>
                     </a>
                 </li>
                 <li>
-                    <a href="http://wwww.twitter.com/themefisher" class="Twitter">
+                    <a href="https://twitter.com/rlawnd963" class="Twitter">
                         <i class="ion-social-twitter"></i>
                     </a>
                 </li>
@@ -262,7 +249,7 @@ Footer Section Start
                     </a>
                 </li>
                 <li>
-                    <a href="http://wwww.fb.com/themefisher" class="Google Plus">
+                    <a href="https://plus.google.com/u/0/105386382350300879173" class="Google Plus">
                         <i class="ion-social-googleplus"></i>
                     </a>
                 </li>

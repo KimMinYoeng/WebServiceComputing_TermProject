@@ -105,8 +105,7 @@ Header Section Start
         <div class="row">
             <div class="col-md-6">
                 <div class="block">
-                    <h2 class="subtitle wow fadeInDown" data-wow-duration="500ms" data-wow-delay=".3s">Contact With
-                        Me</h2>
+                    <h2 class="subtitle wow fadeInDown" data-wow-duration="500ms" data-wow-delay=".3s">Contact With Me</h2>
                     <p class="subtitle-des wow fadeInDown" data-wow-duration="500ms" data-wow-delay=".5s">
                         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore, ea!
                         consectetur adipisicing elit. Dolore, ea!
@@ -119,24 +118,20 @@ Header Section Start
                             </div>
 
                             <div class="form-group wow fadeInDown" data-wow-duration="500ms" data-wow-delay=".8s">
-                                <input type="email" placeholder="Your Email" class="form-control" name="email"
-                                       id="email">
+                                <input type="email" placeholder="Your Email" class="form-control" name="email" id="email" >
                             </div>
 
                             <div class="form-group wow fadeInDown" data-wow-duration="500ms" data-wow-delay="1s">
-                                <input type="text" placeholder="Subject" class="form-control" name="subject"
-                                       id="subject">
+                                <input type="text" placeholder="Subject" class="form-control" name="subject" id="subject">
                             </div>
 
                             <div class="form-group wow fadeInDown" data-wow-duration="500ms" data-wow-delay="1.2s">
-                                <textarea rows="6" placeholder="Message" class="form-control" name="message"
-                                          id="message"></textarea>
+                                <textarea rows="6" placeholder="Message" class="form-control" name="message" id="message"></textarea>
                             </div>
 
 
                             <div id="submit" class="wow fadeInDown" data-wow-duration="500ms" data-wow-delay="1.4s">
-                                <input type="submit" id="contact-submit" class="btn btn-default btn-send"
-                                       value="Send Message">
+                                <input type="submit" id="contact-submit" class="btn btn-default btn-send" value="Send Message">
                             </div>
 
                         </form>
@@ -147,11 +142,11 @@ Header Section Start
                 <div class="map-area">
                     <h2 class="subtitle  wow fadeInDown" data-wow-duration="500ms" data-wow-delay=".3s">Find Us</h2>
                     <p class="subtitle-des wow fadeInDown" data-wow-duration="500ms" data-wow-delay=".5s">
-                        <한국기술교육대학교 1캠퍼스><br>충청남도 천안시 동남구 병천면 충절로 1600
+                        <한국기술교육대학교 1캠퍼스> <br>충청남도 천안시 동남구 병천면 충절로 1600
                     </p>
                     <div class="map">
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3196.283044511175!2d127.2794127152889!3d36.763776779956125!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357b2ac6c614c717%3A0x820bda83618bd53b!2z7ZWc6rWt6riw7Iig6rWQ7Jyh64yA7ZWZ6rWQ!5e0!3m2!1sko!2skr!4v1512317364400"
-                                width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3196.283044511175!2d127.2794127152889!3d36.763776779956125!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357b2ac6c614c717%3A0x820bda83618bd53b!2z7ZWc6rWt6riw7Iig6rWQ7Jyh64yA7ZWZ6rWQ!5e0!3m2!1sko!2skr!4v1512317364400" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+
                     </div>
                 </div>
             </div>
