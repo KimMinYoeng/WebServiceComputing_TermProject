@@ -11,9 +11,7 @@ import koreatech.cse.service.NaverBookService;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
-import org.springframework.transaction.annotation.Transactional;
 import org.springframework.web.bind.annotation.*;
-import org.springframework.web.util.UriComponentsBuilder;
 
 import javax.inject.Inject;
 import java.util.List;
@@ -58,5 +56,15 @@ public class ServiceController {
             return new ResponseEntity<List<Event>>(HttpStatus.NOT_FOUND);
         }
         return new ResponseEntity<List<Event>>(eventList, HttpStatus.OK);
+    }
+
+    @RequestMapping(value = "/xml/edu_list/{edu_dis}/{edu_lib}", method = RequestMethod.GET, produces = "application/xml")
+    public ResponseEntity<List<Education>> edu_listXml(@PathVariable("edu_dis") String edu_dis, @PathVariable("edu_lib") String edu_lib) {
+        List<Education> eduList = educationService.serachEducation(edu_dis, edu_lib);
+        if (eduList.size() == 0) {
+            System.out.println("Education" + edu_dis + ", " + edu_lib + " is not found");
+            return new ResponseEntity<List<Education>>(HttpStatus.NOT_FOUND);
+        }
+        return new ResponseEntity<List<Education>>(eduList, HttpStatus.OK);
     }
 }
