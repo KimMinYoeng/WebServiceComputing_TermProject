@@ -63,6 +63,13 @@
             text-align: center;
         }
     </style>
+    <style>
+
+        #wrap {
+            text-align: center;
+        }
+
+    </style>
 </head>
 <body>
 <!--
@@ -97,15 +104,21 @@ Header Section Start
 </section>
 
 <section class="container">
-    <class = "col-md-12">
-    <form:form modelAttribute="user">
-        name: <form:input path="name"/><br/>
-        email: <form:input path="email"/><br/>
-        password: <form:password path="password"/><br/>
-        age: <form:input path="age"/><br/>
-        <input type="submit" value="Signup"/>
-    </form:form>
-    </class>
+    <div id="wrap">
+            <div class="outer">
+                <div class="innder">
+                    <div class="centered">
+                        <form:form modelAttribute="user">
+                            name: <form:input path="name"/><br/>
+                            email: <form:input path="email"/><br/>
+                            password: <form:password path="password"/><br/>
+                            age: <form:input path="age"/><br/>
+                            <input type="submit" value="Signup"/>
+                        </form:form>
+                    </div>
+                </div>
+        </div>
+    </div>
 </section>
 
 </body>
