@@ -2,6 +2,7 @@ package koreatech.cse.controller.rest;
 
 import koreatech.cse.domain.rest.Book;
 import koreatech.cse.domain.rest.Education;
+import koreatech.cse.domain.rest.Library;
 import koreatech.cse.service.EducationService;
 import koreatech.cse.service.EventService;
 import koreatech.cse.service.LibraryService;
@@ -36,5 +37,15 @@ public class ServiceController {
             return new ResponseEntity<List<Book>>(HttpStatus.NOT_FOUND);
         }
         return new ResponseEntity<List<Book>>(bookList, HttpStatus.OK);
+    }
+
+    @RequestMapping(value = "/xml/lib_list/{district}", method = RequestMethod.GET, produces = "application/xml")
+    public ResponseEntity<List<Library>> lib_listXml(@PathVariable("district") String district) {
+        List<Library> libraryList = libraryService.serachLibrary(district);
+        if (libraryList.size() == 0) {
+            System.out.println("Library" + district + " is not found");
+            return new ResponseEntity<List<Library>>(HttpStatus.NOT_FOUND);
+        }
+        return new ResponseEntity<List<Library>>(libraryList, HttpStatus.OK);
     }
 }

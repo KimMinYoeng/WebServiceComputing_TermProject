@@ -1,6 +1,6 @@
 package koreatech.cse.service;
 
-import koreatech.cse.domain.Event;
+import koreatech.cse.domain.rest.Event;
 import org.springframework.stereotype.Service;
 import org.xmlpull.v1.XmlPullParser;
 import org.xmlpull.v1.XmlPullParserException;
