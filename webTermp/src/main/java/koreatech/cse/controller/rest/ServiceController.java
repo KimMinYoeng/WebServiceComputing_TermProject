@@ -2,6 +2,7 @@ package koreatech.cse.controller.rest;
 
 import koreatech.cse.domain.rest.Book;
 import koreatech.cse.domain.rest.Education;
+import koreatech.cse.domain.rest.Event;
 import koreatech.cse.domain.rest.Library;
 import koreatech.cse.service.EducationService;
 import koreatech.cse.service.EventService;
@@ -47,5 +48,15 @@ public class ServiceController {
             return new ResponseEntity<List<Library>>(HttpStatus.NOT_FOUND);
         }
         return new ResponseEntity<List<Library>>(libraryList, HttpStatus.OK);
+    }
+
+    @RequestMapping(value = "/xml/event_list/{event_dis}/{event_lib}", method = RequestMethod.GET, produces = "application/xml")
+    public ResponseEntity<List<Event>> event_listXml(@PathVariable("event_dis") String event_dis, @PathVariable("event_lib") String event_lib) {
+        List<Event> eventList = eventService.serachEvent(event_dis, event_lib);
+        if (eventList.size() == 0) {
+            System.out.println("Evnet" + event_dis + ", " + event_lib + " is not found");
+            return new ResponseEntity<List<Event>>(HttpStatus.NOT_FOUND);
+        }
+        return new ResponseEntity<List<Event>>(eventList, HttpStatus.OK);
     }
 }
