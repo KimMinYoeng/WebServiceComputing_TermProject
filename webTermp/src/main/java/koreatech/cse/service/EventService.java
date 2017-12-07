@@ -59,7 +59,7 @@ public class EventService {
                                 event.setName(xpp.nextText());
                         } else if (tag.equals("LBRRY_NAME")) {
                             if (event != null)
-                                event.setLibraryname(xpp.nextText());
+                                event.setLibrary(xpp.nextText());
                         } else if (tag.equals("EVENT_BGNDE")) {
                             if (event != null)
                                 event.setBegindate(xpp.nextText());

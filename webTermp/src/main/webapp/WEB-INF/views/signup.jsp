@@ -86,19 +86,17 @@ Header Section Start
         <div class="row">
             <div class="col-md-12">
                 <div class="block">
-                    <div class="wow fadeInUp animated cd-headline slide" data-wow-delay=".4s">
-                        <h2>JOIN</h2>
-                        <ol class="breadcrumb">
-                            <li>
-                                <a href="/">
-                                    <i class="ion-ios-home"></i>
-                                    Home
-                                </a>
-                            </li>
-                            <li class="active">회원가입</li>
-                        </ol>
+                    <h2>JOIN</h2>
+                    <ol class="breadcrumb">
+                        <li>
+                            <a href="/">
+                                <i class="ion-ios-home"></i>
+                                Home
+                            </a>
+                        </li>
+                        <li class="active">회원가입</li>
+                    </ol>
 
-                    </div>
                 </div>
             </div>
         </div>
@@ -107,67 +105,21 @@ Header Section Start
 
 <section class="container">
     <div id="wrap">
-        <div class="outer">
-            <div class="innder">
-                <div class="centered">
-                    <div class="wow fadeInUp animated cd-headline slide" data-wow-delay=".8s">
-                        <div class="btn-lines dark light"></div>
+            <div class="outer">
+                <div class="innder">
+                    <div class="centered">
                         <form:form modelAttribute="user">
-                            <div style="width:180px;margin:0 auto;">
-                                <ol class="smooth-scroll btn btn-default btn-green">
-                                    name: <form:input path="name"/><br/></ol>
-                                <ol class="smooth-scroll btn btn-default btn-green">
-                                    email: <form:input path="email"/><br/></ol>
-
-                                <ol class="smooth-scroll btn btn-default btn-green">
-                                    password: <form:password path="password"/><br/></ol>
-
-                                <ol class="smooth-scroll btn btn-default btn-green">
-                                    age: <form:input path="age"/><br/></ol>
-                            </div>
-                            <input type="submit" class="btn btn-default btn-send" value="Signup"/>
+                            name: <form:input path="name"/><br/>
+                            email: <form:input path="email"/><br/>
+                            password: <form:password path="password"/><br/>
+                            age: <form:input path="age"/><br/>
+                            <input type="submit" value="Signup"/>
                         </form:form>
                     </div>
                 </div>
-            </div>
         </div>
-    </div>
     </div>
 </section>
-
-<footer id="footer">
-    <div class="container">
-        <div class="col-md-8">
-            <p class="copyright">Copyright: <span>2017</span> . Design and Developed by <a
-                    href="https://github.com/KimMinYoeng/WebServiceComputing_TermProject">wsc project team</a></p>
-        </div>
-        <div class="col-md-4">
-            <!-- Social Media -->
-            <ul class="social">
-                <li>
-                    <a href="https://www.facebook.com/profile.php?id=100003644582958&ref=bookmarks" class="Facebook">
-                        <i class="ion-social-facebook"></i>
-                    </a>
-                </li>
-                <li>
-                    <a href="https://twitter.com/rlawnd963" class="Twitter">
-                        <i class="ion-social-twitter"></i>
-                    </a>
-                </li>
-                <li>
-                    <a href="#" class="Linkedin">
-                        <i class="ion-social-linkedin"></i>
-                    </a>
-                </li>
-                <li>
-                    <a href="https://plus.google.com/u/0/105386382350300879173" class="Google Plus">
-                        <i class="ion-social-googleplus"></i>
-                    </a>
-                </li>
-            </ul>
-        </div>
-    </div>
-</footer> <!-- /#footer -->
 
 </body>
 </html>

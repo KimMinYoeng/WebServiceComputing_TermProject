@@ -81,18 +81,16 @@ Header Section Start
         <div class="row">
             <div class="col-md-12">
                 <div class="block">
-                    <div class="wow fadeInDown animated cd-headline slide" data-wow-delay=".4s">
-                        <h2>LOG-IN</h2>
-                        <ol class="breadcrumb">
-                            <li>
-                                <a href="/">
-                                    <i class="ion-ios-home"></i>
-                                    Home
-                                </a>
-                            </li>
-                            <li class="active">회원가입</li>
-                        </ol>
-                    </div>
+                    <h2>LOG-IN</h2>
+                    <ol class="breadcrumb">
+                        <li>
+                            <a href="/">
+                                <i class="ion-ios-home"></i>
+                                Home
+                            </a>
+                        </li>
+                        <li class="active">회원가입</li>
+                    </ol>
                 </div>
             </div>
         </div>
@@ -143,23 +141,19 @@ Header Section Start
         <div class="row">
             <div class="col-md-6">
                 <div class="block">
-
                     <h2 class="subtitle wow fadeInDown" data-wow-duration="500ms" data-wow-delay=".3s">Log in</h2>
                     <p class="subtitle-des wow fadeInDown" data-wow-duration="500ms" data-wow-delay=".5s">
                         if you don't have id. click the link 'join' under the page
                     </p>
-
                     <div class="contact-form">
                         <form id="contact-form" method="post" action="sendmail.php" role="form">
 
                             <div class="form-group wow fadeInDown" data-wow-duration="500ms" data-wow-delay=".6s">
-                                <input type="text" placeholder="Your Id" class="form-control" name="j_username"
-                                       id="name">
+                                <input type="text" placeholder="Your Id" class="form-control" name="name" id="name">
                             </div>
 
                             <div class="form-group wow fadeInDown" data-wow-duration="500ms" data-wow-delay=".8s">
-                                <input type="password" placeholder="Password" class="form-control" name="j_password"
-                                       id="password">
+                                <input type="email" placeholder="Password" class="form-control" name="email" id="email">
                             </div>
 
                             <!--<div class="form-group wow fadeInDown" data-wow-duration="500ms" data-wow-delay="1s">
@@ -170,20 +164,18 @@ Header Section Start
                               <textarea rows="6" placeholder="Message" class="form-control" name="message" id="message"></textarea>
                             </div>-->
 
-                            <div>
-                                <form action="j_spring_security_check" method="post">
-                                    <a id="login" type="submit" class="btn btn-default btn-send wow fadeInDown"
+                            <wrap>
+                                <div>
+                                    <a id="login" class="btn btn-default btn-send wow fadeInDown"
                                        data-wow-duration="500ms" data-wow-delay="1.2s">login</a>
-                                </form>
-                                <a id="join" class="btn btn-default btn-send wow fadeInDown" href="/user/signup"
-                                   data-wow-duration="500ms" data-wow-delay="1.2s">join</a>
-                            </div>
-
-                            <!--   < div id="submit"  class="wow fadeInDown" data-wow-duration="500ms" data-wow-delay="1.4s">
-                                 <input type="submit" id="contact-submit" class="btn btn-default btn-send" value="Send Message">
-                              < div id="join" class="wow fadeInDown" data-wow-duration="500ms" data-wow-delay="1.4s">
-                                <input type="submit" id="join-account" class="btn btn-default btn-send" value="join">
-                               </adiv>-->
+                                    <a id="join" class="btn btn-default btn-send wow fadeInDown" href="/user/signup"
+                                       data-wow-duration="500ms" data-wow-delay="1.2s">join</a>
+                                </div>
+                                <!--   < div id="submit"  class="wow fadeInDown" data-wow-duration="500ms" data-wow-delay="1.4s">
+                                     <input type="submit" id="contact-submit" class="btn btn-default btn-send" value="Send Message">
+                                  < div id="join" class="wow fadeInDown" data-wow-duration="500ms" data-wow-delay="1.4s">
+                                    <input type="submit" id="join-account" class="btn btn-default btn-send" value="join">
+                                   </adiv>-->
 
 
                         </form>
@@ -194,7 +186,7 @@ Header Section Start
                 <div class="map-area">
                     <h2 class="subtitle  wow fadeInDown" data-wow-duration="500ms">Find Us</h2>
                     <p class="subtitle-des wow fadeInDown" data-wow-duration="500ms">
-                        <한국기술교육대학교 1캠퍼스><br>충청남도 천안시 동남구 병천면 충절로 1600</한국기술교육대학교>
+                        <한국기술교육대학교 1캠퍼스><br>충청남도 천안시 동남구 병천면 충절로 1600
                     </p>
                     <div class="map">
                         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3196.283044511175!2d127.2794127152889!3d36.763776779956125!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357b2ac6c614c717%3A0x820bda83618bd53b!2z7ZWc6rWt6riw7Iig6rWQ7Jyh64yA7ZWZ6rWQ!5e0!3m2!1sko!2skr!4v1512317364400"
@@ -206,41 +198,6 @@ Header Section Start
         </div>
     </div>
 </section>
-
-<footer id="footer">
-    <div class="container">
-        <div class="col-md-8">
-            <p class="copyright">Copyright: <span>2017</span> . Design and Developed by <a
-                    href="https://github.com/KimMinYoeng/WebServiceComputing_TermProject">wsc project team</a></p>
-        </div>
-        <div class="col-md-4">
-            <!-- Social Media -->
-            <ul class="social">
-                <li>
-                    <a href="https://www.facebook.com/profile.php?id=100003644582958&ref=bookmarks" class="Facebook">
-                        <i class="ion-social-facebook"></i>
-                    </a>
-                </li>
-                <li>
-                    <a href="https://twitter.com/rlawnd963" class="Twitter">
-                        <i class="ion-social-twitter"></i>
-                    </a>
-                </li>
-                <li>
-                    <a href="#" class="Linkedin">
-                        <i class="ion-social-linkedin"></i>
-                    </a>
-                </li>
-                <li>
-                    <a href="https://plus.google.com/u/0/105386382350300879173" class="Google Plus">
-                        <i class="ion-social-googleplus"></i>
-                    </a>
-                </li>
-            </ul>
-        </div>
-    </div>
-</footer> <!-- /#footer -->
-
 
 </body>
 </html>
