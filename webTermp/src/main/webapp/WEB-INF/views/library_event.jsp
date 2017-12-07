@@ -128,7 +128,7 @@ Header Section Start
             <c:forEach items="${library_event}" var="a">
                 <tr class="success">
                     <td width="12%">"${a.name}"</td>
-                    <td width="12%">"${a.libraryname}"</td>
+                    <td width="12%">"${a.library}"</td>
                     <td width="7%">${a.begindate}</td>
                     <td width="7%">${a.enddate }</td>
                     <td width="8%">${a.target }</td>
