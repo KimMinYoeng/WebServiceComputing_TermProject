@@ -7,7 +7,7 @@
     <meta charset="utf-8">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <link rel="icon" type="image/png" href="/resoures/bootstrap/images/favicon.ico">
-    <title>Signup</title>
+    <title>WebService_Termp</title>
     <meta name="description" content="">
     <meta name="keywords" content="">
     <meta name="author" content="">
@@ -103,20 +103,36 @@ Header Section Start
     </div>
 </section>
 
-<section class="container">
-    <div id="wrap">
-            <div class="outer">
-                <div class="innder">
-                    <div class="centered">
-                        <form:form modelAttribute="user">
-                            name: <form:input path="name"/><br/>
-                            email: <form:input path="email"/><br/>
-                            password: <form:password path="password"/><br/>
-                            age: <form:input path="age"/><br/>
-                            <input type="submit" value="Signup"/>
+<section id="contact-section">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 col-md-offset-3 col-sm-6 col-sm-offset-3">
+                <div class="block">
+                    <h2 class="subtitle wow fadeInDown" data-wow-duration="500ms" data-wow-delay=".3s">Sing UP</h2>
+                    <p class="subtitle-des wow fadeInDown" data-wow-duration="500ms" data-wow-delay=".5s">
+                        회원가입 양식에 맞추어 작성해주세요.
+                    </p>
+                    <div class="contact-form">
+                        <form:form modelAttribute="user" role="form">
+                            <div class="form-group wow fadeInDown">
+                                <input path = "name" placeholder="Your Name" class="form-control" name="name" id="name" >
+                            </div>
+                            <div class="form-group wow fadeInDown">
+                                <input path = "email" placeholder="Your Email" class="form-control" name="email" id="email" >
+                            </div>
+                            <div class="form-group wow fadeInDown">
+                                <input type="password" placeholder="Password" class="form-control" name="password" id="password">
+                            </div>
+                            <div class="form-group wow fadeInDown">
+                                <input type="age" placeholder="Your Age" class="form-control" name="age" id="age">
+                            </div>
+                            <div id="submit" class="wow fadeInDown">
+                                <input type="submit" id="contact-submit" class="btn btn-default btn-send" value="JOIN">
+                            </div>
                         </form:form>
                     </div>
                 </div>
+            </div>
         </div>
     </div>
 </section>

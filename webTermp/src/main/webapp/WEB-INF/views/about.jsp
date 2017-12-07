@@ -7,7 +7,7 @@
     <meta charset="utf-8">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <link rel="icon" type="image/png" href="/resoures/bootstrap/images/favicon.ico">
-    <title>Timer Agency Template</title>
+    <title>WebService_Termp</title>
     <meta name="description" content="">
     <meta name="keywords" content="">
     <meta name="author" content="">
@@ -105,7 +105,7 @@ Header Section Start
             <h3>- 공공 도서관 위치정보 API -</h3>
             <input class="btn btn-primary mybtn" onclick="location='/api/xml/lib_list/강남구'" value="XML"/>
             <h4>서울시 공공데이터 포털에서 제공하는 공공 도서관 위치 정보를 제공하여주는 API이다.</h4>
-            <h5><a href="wsc001.ap-northeast-2.elasticbeanstalk.com/api/xml/lib_list/강남구">(해당 URL : wsc001.ap-northeast-2.elasticbeanstalk.com/api/xml/lib_list/강남구)</a></h5>
+            <h5><a href="http://wsc001.ap-northeast-2.elasticbeanstalk.com/api/xml/lib_list/강남구">(해당 URL : wsc001.ap-northeast-2.elasticbeanstalk.com/api/xml/lib_list/강남구)</a></h5>
             <table class="table table-striped table-bordered table-hover">
                 <tr>
                     <td>&nbsp 구분 &nbsp</td>
@@ -150,7 +150,7 @@ Header Section Start
             <h3>- 공공 도서관 행사정보 API-</h3>
             <input class="btn btn-primary mybtn" onclick="location='/api/xml/event_list/강남구/강남도서관'" value="XML"/>
             <h4>서울시 공공데이터 포털에서 제공하는 공공 도서관 행사 정보를 제공하여주는 API이다.</h4>
-            <h5><a href=" wsc001.ap-northeast-2.elasticbeanstalk.com/api/xml/event_list/강남구/강남도서관">(해당 URL :  wsc001.ap-northeast-2.elasticbeanstalk.com/api/xml/event_list/강남구/강남도서관)</a></h5>
+            <h5><a href="http://wsc001.ap-northeast-2.elasticbeanstalk.com/api/xml/event_list/강남구/강남도서관">(해당 URL :  wsc001.ap-northeast-2.elasticbeanstalk.com/api/xml/event_list/강남구/강남도서관)</a></h5>
             <table class="table table-striped table-bordered table-hover">
                 <tr>
                     <td>&nbsp 구분 &nbsp</td>
@@ -205,7 +205,7 @@ Header Section Start
             <h3>- 공공 도서관 강좌정보 API -</h3>
             <input class="btn btn-primary mybtn" onclick="location='/api/xml/edu_list/강남구/강남도서관'" value="XML"/>
             <h4>서울시 공공데이터 포털에서 제공하는 공공 도서관 강좌 정보를 제공하여주는 API이다.</h4>
-            <h5><a href="wsc001.ap-northeast-2.elasticbeanstalk.com/api/xml/edu_list/강남구/강남도서관">(해당 URL :wsc001.ap-northeast-2.elasticbeanstalk.com/api/xml/edu_list/강남구/강남도서관)</a></h5>
+            <h5><a href="http://wsc001.ap-northeast-2.elasticbeanstalk.com/api/xml/edu_list/강남구/강남도서관">(해당 URL :wsc001.ap-northeast-2.elasticbeanstalk.com/api/xml/edu_list/강남구/강남도서관)</a></h5>
             <table class="table table-striped table-bordered table-hover">
                 <tr>
                     <td>&nbsp 구분 &nbsp</td>
@@ -260,7 +260,7 @@ Header Section Start
             <h3>- 도서 검색 API -</h3>
             <input class="btn btn-primary mybtn" onclick="location='api/xml/book/자바'" value="XML"/>
             <h4>네이버에서 제공하는 네이버에서 검색 가능한 모든 책을 검색하여 정보를 제공하여주는 API이다.</h4>
-            <h5><a href="wsc001.ap-northeast-2.elasticbeanstalk.com/api/xml/book/자바">(해당 URL : wsc001.ap-northeast-2.elasticbeanstalk.com/api/xml/book/자바)</a></h5>
+            <h5><a href="http://wsc001.ap-northeast-2.elasticbeanstalk.com/api/xml/book/자바">(해당 URL : wsc001.ap-northeast-2.elasticbeanstalk.com/api/xml/book/자바)</a></h5>
             <table class="table table-striped table-bordered table-hover">
                     <tr>
                         <td>&nbsp 구분 &nbsp</td>

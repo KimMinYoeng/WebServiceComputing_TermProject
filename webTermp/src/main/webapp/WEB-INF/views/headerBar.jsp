@@ -1,4 +1,5 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%@ taglib prefix="sec" uri="http://www.springframework.org/security/tags" %>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <header id="top-bar" class="navbar-fixed-top animated-header">
     <div class="container">
@@ -27,6 +28,7 @@
                     <li>
                         <a href="/">Home</a>
                     </li>
+                    <sec:authorize access="isAuthenticated()">
                     <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown">Service <span class="caret"></span></a>
                         <div class="dropdown-menu">
@@ -39,10 +41,16 @@
                         </div>
                     </li>
                     <li>
-                        <a href="/list">log in</a>
-                    </li>
-                    <li>
                         <a href="/about">about</a>
+                    </li>
+                    </sec:authorize>
+                    <li>
+                        <sec:authorize access="isAnonymous()">
+                            <a href="/user/signin">SIGNIN</a>
+                        </sec:authorize>
+                        <sec:authorize access="isAuthenticated()">
+                            <a href="/user/signout">SIGNOUT</a>
+                        </sec:authorize>
                     </li>
                 </ul>
             </div>

@@ -7,7 +7,7 @@
     <meta charset="utf-8">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <link rel="icon" type="image/png" href="/resoures/bootstrap/images/favicon.ico">
-    <title>Timer Agency Template</title>
+    <title>WebService_Termp</title>
     <meta name="description" content="">
     <meta name="keywords" content="">
     <meta name="author" content="">

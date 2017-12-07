@@ -8,7 +8,7 @@
     <meta charset="utf-8">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <link rel="icon" type="image/png" href="/resoures/bootstrap/images/favicon.ico">
-    <title>Timer Agency Template</title>
+    <title>WebService_Termp</title>
     <meta name="description" content="">
     <meta name="keywords" content="">
     <meta name="author" content="">
@@ -77,7 +77,7 @@ Header Section Start
 ==================================================
 Slider Section Start
 ================================================== -->
-<section id="hero-area" >
+<section id="hero-area">
     <div class="container">
         <div class="row">
             <div class="col-md-12 text-center">
@@ -85,7 +85,7 @@ Slider Section Start
 
                     <!-- Slider -->
                     <section class="cd-intro">
-                        <h1 class="wow fadeInUp animated cd-headline slide" data-wow-delay=".4s" >
+                        <h1 class="wow fadeInUp animated cd-headline slide" data-wow-delay=".4s">
                             <span>Book Search Service</span><br>
                             <span class="cd-words-wrapper">
                                     <b class="is-visible">READER</b>
@@ -95,45 +95,62 @@ Slider Section Start
                         </h1>
                     </section> <!-- cd-intro -->
                     <!-- /.slider -->
-                    <h2 class="wow fadeInUp animated" data-wow-delay=".6s" >
-                        여러분들이 필요로 하는 책 , 도서관에 대한 정보 제공!
-                    </h2>
-                    <a class="btn-lines dark light wow fadeInUp animated smooth-scroll btn btn-default btn-green" data-wow-delay=".9s" href="#search" data-section="#search" >BOOK LIST</a>
-                    <a class="btn-lines dark light wow fadeInUp animated smooth-scroll btn btn-default btn-green" data-wow-delay=".9s" href="#position" data-section="#position" >LIBRARY LIST</a>
-                    <a class="btn-lines dark light wow fadeInUp animated smooth-scroll btn btn-default btn-green" data-wow-delay=".9s" href="#festival" data-section="#festival" >LIBRARY EVENT</a>
-                    <a class="btn-lines dark light wow fadeInUp animated smooth-scroll btn btn-default btn-green" data-wow-delay=".9s" href="#class" data-section="#class" >LIBRARY EDUCATION</a>
+                    <sec:authorize access="isAnonymous()">
+                        <h2>우리 서비스는 로그인을 하셔야지만 이용할 수 있습니다.<br>
+                        아직 회원이 아닌신 경우 'JOIN'을 눌러 가입 해주세요.</h2>
+                        <a  href="/user/signin"  class="btn btn-default btn-contact wow fadeInDown" data-wow-delay=".9s">SIGNIN</a>
+                        <a href="/user/signup" class="btn btn-default btn-contact wow fadeInDown" data-wow-delay=".9s">JOIN</a>
+                    </sec:authorize>
+                    <sec:authorize access="isAuthenticated()">
+                        <h2 class="wow fadeInUp animated" data-wow-delay=".6s">
+                            여러분들이 필요로 하는 책 , 도서관에 대한 정보 제공!
+                        </h2>
+                        <a class="btn-lines dark light wow fadeInUp animated smooth-scroll btn btn-default btn-green"
+                           data-wow-delay=".9s" href="#search" data-section="#search">BOOK LIST</a>
+                        <a class="btn-lines dark light wow fadeInUp animated smooth-scroll btn btn-default btn-green"
+                           data-wow-delay=".9s" href="#position" data-section="#position">LIBRARY LIST</a>
+                        <a class="btn-lines dark light wow fadeInUp animated smooth-scroll btn btn-default btn-green"
+                           data-wow-delay=".9s" href="#festival" data-section="#festival">LIBRARY EVENT</a>
+                        <a class="btn-lines dark light wow fadeInUp animated smooth-scroll btn btn-default btn-green"
+                           data-wow-delay=".9s" href="#class" data-section="#class">LIBRARY EDUCATION</a>
+                    </sec:authorize>
                 </div>
             </div>
         </div>
     </div>
 </section><!--/#main-slider-->
 
-
 <section id="search">
     <div class="container">
         <div class="row">
             <div class="col-md-6 col-sm-6">
-                <div class="block wow fadeInLeft" data-wow-delay=".3s" data-wow-duration="500ms" style="width:500px;margin:0 auto;">
+                <div class="block wow fadeInLeft" data-wow-delay=".3s" data-wow-duration="500ms"
+                     style="width:500px;margin:0 auto;">
                     <br><br><br><br>
-
                     <h2>
-                        <div style="width:180px;margin:0 auto;>
-                                <b class="is-visible">
-                        <a href="/bookList.do" > BOOK LIST</a></b>
+                        <sec:authorize access="isAnonymous()">
+                            <div style="width:180px;margin:0 auto;" class="is-visible">
+                                <a>BOOK LIST</a>
+                            </div>
+                        </sec:authorize>
+                        <sec:authorize access="isAuthenticated()">
+                            <div style="width:180px;margin:0 auto;" class="is-visible">
+                                <a href="/bookList.do">BOOK LIST</a>
+                            </div>
+                        </sec:authorize>
+                    </h2>
+                    <p>
+                        OPEN API를 이용하여 사용자가 원하는 도서를 찾아주고 도서에 대한 정보와 가격을 사용자에게 알려주는 역할을 한다.
+                    </p>
                 </div>
-                </h2>
-                <p>
-                    OPEN API를 이용하여 사용자가 원하는 도서를 찾아주고 도서에 대한 정보와 가격을 사용자에게 알려주는 역할을 한다.
-                </p>
-            </div>
 
-        </div>
-        <div class="col-md-6 col-sm-6">
-            <div class="block wow fadeInRight" data-wow-delay=".3s" data-wow-duration="500ms">
-                <img src="/resources/bootstrap/images/about/book.jpg" width="550" height="400" alt="">
+            </div>
+            <div class="col-md-6 col-sm-6">
+                <div class="block wow fadeInRight" data-wow-delay=".3s" data-wow-duration="500ms">
+                    <img src="/resources/bootstrap/images/about/book.jpg" width="550" height="400" alt="">
+                </div>
             </div>
         </div>
-    </div>
     </div>
 </section> <!-- /#about -->
 
@@ -141,27 +158,33 @@ Slider Section Start
     <div class="container">
         <div class="row">
             <div class="col-md-6 col-sm-6">
-                <div class="block wow fadeInLeft" data-wow-delay=".3s" data-wow-duration="500ms" style="width:500px;margin:0 auto;">
+                <div class="block wow fadeInLeft" data-wow-delay=".3s" data-wow-duration="500ms"
+                     style="width:500px;margin:0 auto;">
                     <br><br><br><br>
-
                     <h2>
-                        <div style="width:180px;margin:0 auto;>
-                                <b class="is-visible">
-                        <a href="/service/library/list.do" >LIBRARY LIST</a></b>
+                        <sec:authorize access="isAnonymous()">
+                            <div style="width:180px;margin:0 auto;" class="is-visible">
+                                <a>LIBRARY LIST</a>
+                            </div>
+                        </sec:authorize>
+                        <sec:authorize access="isAuthenticated()">
+                            <div style="width:180px;margin:0 auto;" class="is-visible">
+                                <a href="/service/library/list.do">LIBRARY LIST</a>
+                            </div>
+                        </sec:authorize>
+                    </h2>
+                    <p>
+                        OPEN API를 이용하여 사용자가 원하는 지겨의 도서관을 도서관의 주소와 정보들을 알려드립니다.
+                    </p>
+                </div>
 
-                </h2>
-                <p>
-                    OPEN API를 이용하여 사용자가 원하는 지겨의 도서관을 도서관의 주소와 정보들을 알려드립니다.
-                </p>
             </div>
-
-        </div>
-        <div class="col-md-6 col-sm-6">
-            <div class="block wow fadeInRight" data-wow-delay=".3s" data-wow-duration="500ms">
-                <img src="/resources/bootstrap/images/about/book2.jpg" width="550" height="400" alt="">
+            <div class="col-md-6 col-sm-6">
+                <div class="block wow fadeInRight" data-wow-delay=".3s" data-wow-duration="500ms">
+                    <img src="/resources/bootstrap/images/about/book2.jpg" width="550" height="400" alt="">
+                </div>
             </div>
         </div>
-    </div>
     </div>
 </section> <!-- /#about -->
 
@@ -169,27 +192,33 @@ Slider Section Start
     <div class="container">
         <div class="row">
             <div class="col-md-6 col-sm-6">
-                <div class="block wow fadeInLeft" data-wow-delay=".3s" data-wow-duration="500ms" style="width:500px;margin:0 auto;">
+                <div class="block wow fadeInLeft" data-wow-delay=".3s" data-wow-duration="500ms"
+                     style="width:500px;margin:0 auto;">
                     <br><br><br><br>
-
                     <h2>
-                        <div style="width:180px;margin:0 auto;>
-                                <b class="is-visible">
-                        <a href="/service/library/event.do" >LIBRARY EVENT</a></b>
+                        <sec:authorize access="isAnonymous()">
+                            <div style="width:180px;margin:0 auto;" class="is-visible">
+                                <a>LIBRARY EVENT</a>
+                            </div>
+                        </sec:authorize>
+                        <sec:authorize access="isAuthenticated()">
+                            <div style="width:180px;margin:0 auto;" class="is-visible">
+                                <a href="/service/library/event.do">LIBRARY EVENT</a>
+                            </div>
+                        </sec:authorize>
+                    </h2>
+                    <p>
+                        OPEN API를 이용하여 사용자가 지역과 도서관을 입력하면 해당 도서관의 행사를 알려드립니다.
+                    </p>
                 </div>
-                </h2>
-                <p>
-                    OPEN API를 이용하여 사용자가 지역과 도서관을 입력하면 해당 도서관의 행사를 알려드립니다.
-                </p>
-            </div>
 
-        </div>
-        <div class="col-md-6 col-sm-6">
-            <div class="block wow fadeInRight" data-wow-delay=".3s" data-wow-duration="500ms">
-                <img src="/resources/bootstrap/images/about/book3.jpg" width="550" height="400" alt="">
+            </div>
+            <div class="col-md-6 col-sm-6">
+                <div class="block wow fadeInRight" data-wow-delay=".3s" data-wow-duration="500ms">
+                    <img src="/resources/bootstrap/images/about/book3.jpg" width="550" height="400" alt="">
+                </div>
             </div>
         </div>
-    </div>
     </div>
 </section> <!-- /#about -->
 
@@ -197,27 +226,33 @@ Slider Section Start
     <div class="container">
         <div class="row">
             <div class="col-md-6 col-sm-6">
-                <div class="block wow fadeInLeft" data-wow-delay=".3s" data-wow-duration="500ms" style="width:500px;margin:0 auto;">
+                <div class="block wow fadeInLeft" data-wow-delay=".3s" data-wow-duration="500ms"
+                     style="width:500px;margin:0 auto;">
                     <br><br><br><br>
-
                     <h2>
-                        <div style="width:230px;margin:0 auto;>
-                                <b class="is-visible">
-                        <a href="/service/library/education.do" >LIBRARY EDUCATION </a></b>
+                        <sec:authorize access="isAnonymous()">
+                            <div style="width:300px;margin:0 auto;" class="is-visible">
+                                <a>LIBRARY EDUCATION</a>
+                            </div>
+                        </sec:authorize>
+                        <sec:authorize access="isAuthenticated()">
+                            <div style="width:300px;margin:0 auto;" class="is-visible">
+                                <a href="/service/library/education.do">LIBRARY EDUCATION</a>
+                            </div>
+                        </sec:authorize>
+                    </h2>
+                    <p>
+                        OPEN API를 이용하여 사용자가 지역과 도서관을 입력하면 해당 도서관의 강좌를 알려드립니다.
+                    </p>
                 </div>
-                </h2>
-                <p>
-                    OPEN API를 이용하여 사용자가 지역과 도서관을 입력하면 해당 도서관의 강좌를 알려드립니다.
-                </p>
-            </div>
 
-        </div>
-        <div class="col-md-6 col-sm-6">
-            <div class="block wow fadeInRight" data-wow-delay=".3s" data-wow-duration="500ms">
-                <img src="/resources/bootstrap/images/about/book4.jpg" width="550" height="400" alt="">
+            </div>
+            <div class="col-md-6 col-sm-6">
+                <div class="block wow fadeInRight" data-wow-delay=".3s" data-wow-duration="500ms">
+                    <img src="/resources/bootstrap/images/about/book4.jpg" width="550" height="400" alt="">
+                </div>
             </div>
         </div>
-    </div>
     </div>
 </section> <!-- /#about -->
 
@@ -228,7 +263,8 @@ Footer Section Start
 <footer id="footer">
     <div class="container">
         <div class="col-md-8">
-            <p class="copyright">Copyright: <span>2017</span> . Design and Developed by <a href="https://github.com/KimMinYoeng/WebServiceComputing_TermProject">wsc project team</a></p>
+            <p class="copyright">Copyright: <span>2017</span> . Design and Developed by <a
+                    href="https://github.com/KimMinYoeng/WebServiceComputing_TermProject">wsc project team</a></p>
         </div>
         <div class="col-md-4">
             <!-- Social Media -->
